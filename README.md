@@ -55,17 +55,17 @@ The analysis of the election show that:
 
 The code uses list and dictionary to be populated with all counties and candidates found in a provided dataset making it suitable to any election audition. However, two small changes are necessary to accommodate unpredictable specifications:
 
- 1. __Change the path and CSV file name within the code below within__:
+ 1. __Change the path and CSV file name in the code as below __:
 	 - Whatever is *after* comma may be the *CSV file name* to be informed within quotes. 
 	 - Whatever is *before* comma may be the *path* to be informed within quotes. 
-		 - It is important to know that Python always starts looking for a file in the same directory where the program is running. 
+		 - It is important to know that Python always starts looking for the file in the same directory where the program is running. 
 
 ```Python 
    #Add a variable to load a file from a path.
    file_to_load = os.path.join( "Resources", "election_results.csv")
 ```
 
- 2. __Adjust the number in the code below to indicate the column where candidates ```candidate_name = row[2] ``` and counties ```county_name = row[1] ``` will be found within the new CSV file__:
+ 2. __Adjust the number in the code below to indicate the column where candidates ```candidate_name = row[2] ``` and counties ```county_name = row[1] ``` will be found in the new CSV file__:
 	 - This part of the code runs each raw in the informed column number to get the candidate name and county name. 
 		 - However, it is important to know that the column number always start with zero meaning that the first column may be represented by the number 0, the second column may be represented by the number 1 and so forth.
 ```Python 
