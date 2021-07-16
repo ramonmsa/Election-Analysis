@@ -53,7 +53,7 @@ The analysis of the election show that:
 
 ## Summary
 
-The code uses list and dictionary to be populate with all counties and candidates found in a provided dataset making it suitable to any election audition. However, two small changes are necessary to accommodate unpredictable specifications:
+The code uses list and dictionary to be populated with all counties and candidates found in a provided dataset making it suitable to any election audition. However, two small changes are necessary to accommodate unpredictable specifications:
 
  1. __Change the path and CSV file name within the code below within__:
 	 - Whatever is *after* comma may be the *CSV file name* to be informed within quotes. 
